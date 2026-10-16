@@ -70,4 +70,13 @@ a, a:active, a:visited, a:hover {
   background-color:  rgb(0, 17, 255);
   color: white;
   cursor: pointer;
+  animation-name: cambioColor;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes cambioColor {
+   0%  {color: rgb(255, 242, 0);}
+  50%  {color: rgb(77, 255, 0); }
+  100%  {color: rgb(255, 255, 255);}
 }
