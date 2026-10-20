@@ -45,6 +45,10 @@ a, a:active, a:visited, a:hover {
   font-family: 'Press Start 2P', cursive;
   font-size: 2.9rem;
   font-style: normal;
+  animation-name: cambiarTamaño;
+  animation-duration: 0.8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(3, end); 
 }
 
 #tituloPagina:hover {
@@ -65,18 +69,23 @@ a, a:active, a:visited, a:hover {
 }
 
 #boton {
-  font-size: 1em;
+  font-size: 2em;
   font-family: 'Press Start 2P', cursive;
   background-color:  rgb(0, 17, 255);
   color: white;
   cursor: pointer;
   animation-name: cambioColor;
-  animation-duration: 4s;
+  animation-duration: 1.5s;
   animation-iteration-count: infinite;
+  animation-timing-function: steps(2, end); 
 }
 
 @keyframes cambioColor {
-   0%  {color: rgb(255, 242, 0);}
-  50%  {color: rgb(77, 255, 0); }
-  100%  {color: rgb(255, 255, 255);}
+   0%  {color: rgb(255, 255, 255);}
+  100%  {color: rgb(124, 225, 0); }
+}
+
+@keyframes cambiarTamaño {
+   0% { transform: scale(1); }
+  100% { transform: scale(1.5); }
 }
