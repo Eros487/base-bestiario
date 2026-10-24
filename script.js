@@ -24,11 +24,6 @@ const tronco = document.getElementById("tronco");
 const patas = document.getElementById("patas");
 const boton = document.getElementById("boton");
 
-// Inicializamos las variables de los números aleatorios
-let cabezaAleatorio = 0;
-let troncoAleatorio = 0;
-let patasAleatorio = 0;
-
 // Función para generar un número aleatorio entre dos valores
 function numeroAleatorio(min, max) {
   return Math.floor(Math.random() * (max - min) + min);
@@ -46,16 +41,17 @@ function generarBestia() {
 
   // Si son 3 iguales - NO IMPORTA CUAL
   if (r1 === r2 && r2 === r3) {
-    
     // ESTO ES EL CONFETI
     confetti({
       particleCount: 150,
       spread: 90,
       origin: { y: 0.6 },
       colors: ['#FFD700', '#FFA500', '#FFFF00']
-      });
-  let duration = 2 * 1000;
-  let end = Date.now() + duration;
+    });
+
+    let duration = 2 * 1000;
+    let end = Date.now() + duration;
+
     (function frame() {
       confetti({
         particleCount: 5,
@@ -73,15 +69,14 @@ function generarBestia() {
       if (Date.now() < end) {
         requestAnimationFrame(frame);
       }
-    }
-  )
-}
+    })();
+  } // <-- AQUÍ FALTABA CERRAR EL IF DEL CONFETI
+} // <-- AQUÍ SE CIERRA CORRECTAMENTE LA FUNCIÓN
 
-// Generamos un nuevo collage cada vez que hacemos click en el botón "mezclar"
+// Generamos un nuevo collage cada vez que hacemos click en el botón
 boton.addEventListener("click", function () {
   generarBestia();
 });
 
+// Ejecutamos una vez al cargar la página para que no empiece en blanco
 generarBestia();
-
-}
