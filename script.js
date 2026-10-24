@@ -48,9 +48,18 @@ function generarBestia() {
   console.log(cabezaAleatorio, troncoAleatorio, patasAleatorio);
 }
 
+if (cabezaAleatorio === troncoAleatorio && troncoAleatorio === patasAleatorio) {
+    console.log("TRIPLE!");
+    document.getElementById("premio").style.display = "block";
+setTimeout(() => {
+  document.getElementById("premio").style.display = "none";
+}, 2000);
+  }
+
 // Generamos un nuevo collage cada vez que hacemos click en el botón "mezclar"
 boton.addEventListener("click", function () {
   generarBestia();
 });
 
 generarBestia();
+
