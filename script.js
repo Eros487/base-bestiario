@@ -1,17 +1,17 @@
 // Listas de imágenes
 const listaCabezas = [
-  "../base-bestiario/assets/img/cabeza1.jpg",
-  "../base-bestiario/assets/img/cabeza2.jpg",
+  "../base-bestiario/assets/img/cabeza1.jpeg",
+  "../base-bestiario/assets/img/cabeza2.avif",
   "../base-bestiario/assets/img/cabeza3.png",
 ];
 const listaTroncos = [
- "../base-bestiario/assets/img/tronco1.jpg",
-  "../base-bestiario/assets/img/tronco2.jpg",
-  "../base-bestiario/assets/img/tronco3.jpg",
+ "../base-bestiario/assets/img/tronco1.jpeg",
+  "../base-bestiario/assets/img/tronco2.avif",
+  "../base-bestiario/assets/img/tronco3.png",
 ];
 const listaPatas = [
-  "../base-bestiario/assets/img/patas1.jpg",
-  "../base-bestiario/assets/img/patas2.jpg",
+  "../base-bestiario/assets/img/patas1.jpeg",
+  "../base-bestiario/assets/img/patas2.avif",
   "../base-bestiario/assets/img/patas3.png",
 ];
 
