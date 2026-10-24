@@ -47,23 +47,7 @@ function generarBestia() {
 
   console.log(cabezaAleatorio, troncoAleatorio, patasAleatorio);
 }
-  cabeza.src = listaCabezas[idxCabeza];
-  tronco.src = listaTroncos[idxTronco];
-  patas.src = listaPatas[idxPatas];
 
-   if (!conEfectos) return;
-  const tresIguales = idxCabeza === idxTronco && idxTronco === idxPatas;
-
-  function lanzarConfetiColombiano() {
-  if (typeof confetti === "function") {
-    confetti({
-      particleCount: 120,
-      spread: 80,
-      origin: { y: 0.6 },
-      colors: ["#fc2516", "#000dff", "#cec511"],
-    });
-  }
-}
 // Generamos un nuevo collage cada vez que hacemos click en el botón "mezclar"
 boton.addEventListener("click", function () {
   generarBestia();
