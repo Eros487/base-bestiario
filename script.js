@@ -2,7 +2,7 @@
 const listaCabezas = [
   "../base-bestiario/assets/img/cabeza1.jpeg",
   "../base-bestiario/assets/img/cabeza2.avif",
-  "../base-bestiario/assets/img/cabeza3.png",
+  "../base-bestiario/assets/img/cabezauva3.png",
 ];
 const listaTroncos = [
  "../base-bestiario/assets/img/tronco1.jpeg",
