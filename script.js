@@ -54,6 +54,8 @@ function generarBestia() {
       origin: { y: 0.6 },
       colors: ['#FFD700', '#FFA500', '#FFFF00']
       });
+  let duration = 2 * 1000;
+  let end = Date.now() + duration;
     (function frame() {
       confetti({
         particleCount: 5,
